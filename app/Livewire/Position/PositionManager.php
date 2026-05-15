@@ -19,7 +19,7 @@ class PositionManager extends Component
 
     protected $rules = [
         'name' => 'required|min:2',
-        'basic_salary' => 'required|numeric|min:0',
+        'basic_salary' => 'required|numeric|min:0|max:9999999999999',
     ];
 
     public function updatedSearch()
